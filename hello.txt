@@ -27,3 +27,14 @@ def square(x: int) -> int:
 
 def cube(x: int) -> int:
 	return x ** 3
+
+def is_integer(string: str) -> bool:
+	"""
+	Returns True if the given string is a str of integer, otherwise False.
+	"""
+	try:
+		num = int(str)
+	except:
+		return False 
+	return True
+
